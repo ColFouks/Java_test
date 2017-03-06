@@ -14,6 +14,11 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+        <groupId>joda-time</groupId>
+        <artifactId>joda-time</artifactId>
+        <version>2.2</version>
+    </dependency>
   </dependencies>
   <distributionManagement>
     <repository>
@@ -27,4 +32,28 @@
       <url>http://localhost:8081/repository/maven-snapshots</url>
     </snapshotRepository>
   </distributionManagement>
+    <build>
+	<plugins>
+	    <plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-shade-plugin</artifactId>
+		<version>2.1</version>
+		<executions>
+		    <execution>
+			<phase>package</phase>
+			<goals>
+			    <goal>shade</goal>
+			</goals>
+			<configuration>
+			    <transformers>
+				<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+				    <mainClass>net.test.app.App</mainClass>
+				</transformer>
+			    </transformers>
+			</configuration>
+		    </execution>
+		</executions>
+	    </plugin>
+	</plugins>
+    </build>
 </project>
