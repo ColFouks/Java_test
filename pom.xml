@@ -3,7 +3,7 @@
   <groupId>net.test.app</groupId>
   <artifactId>test_java</artifactId>
   <packaging>jar</packaging>
-  <version>1.1</version>
+  <version>1.2</version>
   <name>test_java</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -35,7 +35,7 @@
     <connection>scm:git:https://github.com/ColFouks/Java_test.git</connection>
     <url>http://github.com/ColFouks/Java_test</url>
     <developerConnection>scm:git:https://github.com/ColFouks/Java_test.git</developerConnection>
-    <tag>v1.1</tag>
+    <tag>v1.2</tag>
   </scm>
     <build>
 	<plugins>
