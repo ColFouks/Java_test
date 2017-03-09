@@ -12,6 +12,7 @@ dependencies {
 }
 archivesBaseName = 'test_java'
 version="1.3-SNAPSHOT"
+group="net.test.app"
 jar {
     manifest {
         attributes 'Implementation-Version': version
