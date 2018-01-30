@@ -3,7 +3,7 @@
   <groupId>net.test.app</groupId>
   <artifactId>test_java</artifactId>
   <packaging>jar</packaging>
-  <version>1.3-SNAPSHOT</version>
+  <version>1.3.0.0-SNAPSHOT</version>
   <name>test_java</name>
   <url>http://maven.apache.org</url>
   <dependencies>
